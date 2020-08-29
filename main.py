@@ -403,9 +403,9 @@ else:
 
         data_name = args.data_path.split('/')[1]
 
-        if not os.path.exists('./experiments/{}'.format(data_name)):
-            os.makedirs('./experiments/{}'.format(data_name))
-        topic_probability_df.to_csv(('./experiments/{}/topic_probability.csv'.format(data_name)))
+        if not os.path.exists('./experiments/{}_K={}'.format(data_name, args.num_topics)):
+            os.makedirs('./experiments/{}_K={}'.format(data_name, args.num_topics))
+        topic_probability_df.to_csv(('./experiments/{}_K={}/topic_probability.csv'.format(data_name, args.num_topics)))
         
 
         print('*'*100)
@@ -442,9 +442,9 @@ else:
 
         data_name = args.data_path.split('/')[1]
 
-        if not os.path.exists('./experiments/{}'.format(data_name)):
-            os.makedirs('./experiments/{}'.format(data_name))
-        topic_words_probability_df.to_csv(('./experiments/{}/topic_words_probability.csv'.format(data_name)))
+        if not os.path.exists('./experiments/{}_K={}'.format(data_name, args.num_topics)):
+            os.makedirs('./experiments/{}_K={}'.format(data_name, args.num_topics))
+        topic_words_probability_df.to_csv(('./experiments/{}_K={}/topic_words_probability.csv'.format(data_name, args.num_topics)))
         
 
         if args.train_embeddings:
