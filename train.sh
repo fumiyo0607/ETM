@@ -1,0 +1,1 @@
+python main.py --mode train --dataset 20ng --data_path scripts/max_df=0.7-min_df=10-stop_words_num=523 --num_topics 50 --train_embeddings 1 --epochs 2

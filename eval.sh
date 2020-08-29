@@ -1,0 +1,1 @@
+python main.py --mode eval --dataset 20ng --data_path scripts/max_df=0.7-min_df=10-stop_words_num=523 --num_topics 50 --train_embeddings 1 --tc 1 --td 1 --load_from results/etm_max_df=0.7-min_df=10-stop_words_num=523_K_50_Htheta_800_Optim_adam_Clip_0.0_ThetaAct_relu_Lr_0.005_Bsz_1000_RhoSize_300_trainEmbeddings_1
